@@ -1,0 +1,53 @@
+<section
+  id="contenedor-form-contacto"
+  class="contenedor sombra formulario-contacto"
+>
+  <h3>Rellene el formulario de contacto</h3>
+
+  <form id="formulario">
+    <fieldset>
+      <legend>&nbsp;Información Personal&nbsp;</legend>
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input
+          class="input-text"
+          type="text"
+          placeholder="Tu Nombre"
+          id="nombre"
+          name="nombre"
+        />
+      </div>
+      <div class="campo">
+        <label for="telefono">Teléfono</label>
+        <input
+          class="input-text"
+          type="tel"
+          placeholder="Tu Teléfono"
+          id="telefono"
+          name="telefono"
+        />
+      </div>
+      <div class="campo">
+        <label for="correo">E-mail</label>
+        <input
+          class="input-text"
+          type="email"
+          placeholder="Tu Email"
+          id="correo"
+          name="correo"
+        />
+      </div>
+      <div class="campo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea
+          class="input-text"
+          placeholder="Expón cuál es tu proyecto, qué tipo de web y funcionalidad quieres que implementemos"
+          id="mensaje"
+          name="mensaje"></textarea>
+      </div>
+    </fieldset>
+    <div class="flex flex-end">
+      <button class="boton w-sm-100" type="submit" disabled>Enviar</button>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,34 @@
+/**  Variables **/
+:root {
+  /*colores*/
+  --blanco: #ffffff;
+  --negro: #000000;
+  --azul: #0040ff;
+  --primario: #00a5e5;
+  --primario-tint: #4c8dff;
+  --secundario: #86d3ff;
+  --amarillo: #ffc107;
+  --amarillo-claro: #e8dcbe;
+  --gris: #757575;
+  --grisOscuro: #333333;
+  --grisClaro: #dfe9f3;
+  --grisMuyClaro: #f7f7f7;
+  --indigo: #4561a8;
+  --indigo-oscuro: #485984;
+  --verde: #71b100;
+  --success: #2dd36f;
+  --success-contrast: #000000;
+  --danger: #eb445a;
+  --danger-contrast: #ffffff;
+  --color-twitter: #00a5e5;
+
+  /*tipografia*/
+  --fuente_principal: "Lato", sans-serif;
+  --fuente_grandstander: "Grandstander", cursive;
+
+  /*Tamaños de Media Queries*/
+  --telefono: 480px;
+  --tablet: 768px;
+  --desktop: 992px;
+  --desktopXL: 1200px;
+}

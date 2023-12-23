@@ -1,0 +1,40 @@
+.sobre-mi-page .sobre-mi h2 {
+  display: block;
+  margin-bottom: 7rem;
+}
+@media (min-width: 768px) {
+  .sobre-mi-page .contenido-sobre-mi {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5rem;
+  }
+}
+.sobre-mi-page .contenido-sobre-mi .imagen {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.sobre-mi-page .contenido-sobre-mi img {
+  width: 100%;
+  min-width: 15rem;
+  max-width: 30rem;
+  border-radius: 50%;
+}
+.sobre-mi-page .contenido-sobre-mi h3 {
+  font-family: var(--fuente_grandstander);
+  color: var(--indigo);
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+.sobre-mi-page .contenido-sobre-mi p {
+  line-height: 1.5;
+  text-indent: 2rem;
+}
+.sobre-mi-page .contenido-sobre-mi a {
+  font-size: 1.2em;
+}

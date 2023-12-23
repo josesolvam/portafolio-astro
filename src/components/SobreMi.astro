@@ -1,0 +1,85 @@
+---
+import fotoMiaWebp from "../assets/img/foto-mia-bosquejo.webp";
+import fotoMiaPng from "../assets/img/foto-mia-bosquejo.png";
+---
+
+<section id="sobre-mi" class="contenedor sombra sobre-mi">
+  <h2>Sobre mi</h2>
+
+  <div class="contenido-sobre-mi">
+    <div class="imagen">
+      <picture>
+        <source srcset={fotoMiaWebp.src} type="image/webp" />
+        <source srcset={fotoMiaPng.src} type="image/png" />
+        <img loading="lazy" src={fotoMiaPng.src} alt="Sobre mí" />
+      </picture>
+    </div>
+
+    <div class="texto-sobre-mi">
+      <h3>Desarrollador web Freelancer</h3>
+
+      <p>
+        Soy un apasionado del diseño y programación web. Resido en Valencia
+        (España), nacido en 1980. Tras unos primeros inicios hace ya muchos
+        años, llevo aprendiendo programación web desde 2014 de forma
+        autodidacta, realizando diferentes proyectos a nivel personal. El año
+        2023 decido dar un empujón a mi pasión, iniciando un módulo Superior en
+        Desarrollo de Aplicaciones Web (DAW), de la formación profesional
+        oficial en España.
+      </p>
+      <p>
+        En 2014, cuando me enfoqué seriamente en esta profesión, todavía no
+        existía el ECMAScript 6. Esto significa, para los no legos en estas
+        materias, que las cosas han evolucionado mucho desde entonces. Lo cual a
+        mí personalmente me motiva, y trato de seguir siempre aprendiendo para
+        estar lo más actualizado posible.
+      </p>
+      <p>
+        Por suerte estoy convencido de que escogí bien en su momento, puesto que
+        el mundo de la programación se ha inclinado mucho hacia la parte web. Y
+        es que la programación web nos permite actualmente crear y poner en
+        funcionamiento cualquier tipo de aplicación, por más compleja que
+        pensemos, que corra en cualquier tipo de dispositivo. Que funcione tanto
+        en local como a través de Internet. Y la podemos implementar tanto para
+        el navegador como, si lo deseamos, darle la forma de aplicación nativa
+        de cada plataforma.
+      </p>
+      <p>
+        Mi especialidad es diseñar y programar cualquier tipo de aplicación web,
+        ya sea del lado del cliente (Front-end) como del lado del servidor
+        (Back-end), prestando especial atención a la parte del diseño gráfico y
+        responsive de la aplicación. Así como inserción y respaldo seguro de la
+        información en bases de datos locales y en línea. Me ocupo también del
+        despliegue de la aplicación en la web (puesta en funcionamiento en
+        servidor/es), construyendo la arquitectura que se precise.
+      </p>
+
+      <p>
+        También trabajo mucho en la optimización para SEO en todos los casos que
+        resulta necesario, que por experiencia es en casi la totalidad. Así
+        como, en su caso, aprovechando las características nativas de cada
+        dispositivo (PWA). Optimizo la web tanto como se pueda, con la finalidad
+        de lograr la mejor experiencia del usuario, tratando de obtener la mejor
+        calificación e indexado de los motores de búsqueda. El código se testea
+        en todo momento, evitando así errores que mermen la experiencia del
+        visitante.
+      </p>
+      <p>
+        Trato siempre de dar la solución más adecuada posible a las necesidades
+        que tenga cada cliente. Incluso proponiendo y ayudando a poner en
+        funcionamiento opciones <i>"no code"</i> como Wordpress, Moodle o de
+        construcción mía propia, cuando el cliente cuenta con presupuesto
+        limitado y se atreve a construir él/ella mismo/a, con mi ayuda, su
+        propia solución. Si bien voy a estar siempre a su lado para mantener,
+        escalar y mejorar la aplicación cuando lo requiera.
+      </p>
+      <p>
+        Para más información consulta la sección de
+        <a href="/servicios">"Servicios"</a>. No dudes en exponerme tu proyecto,
+        en el apartado de
+        <a href="/contacto">"Contacto"</a>
+         y vemos qué posibilidades tenemos y presupuesto.
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeroIndex from "../components/HeroIndex.astro";
+import ResumenServicios from "../components/ResumenServicios.astro";
+import ContactoIndex from "../components/ContactoIndex.astro";
+---
+
+<Layout title="Jose Ramón | Programador Web" classNamePage="index-page">
+  <HeroIndex />
+  <main>
+    <ResumenServicios />
+    <ContactoIndex />
+  </main>
+  <script>
+    import "../js/validacion-form";
+  </script>
+</Layout>

@@ -1,0 +1,46 @@
+/** Pagina proyectos **/
+.proyectos-page .proyectos {
+  overflow: hidden;
+}
+.proyectos-page .proyectos h2 {
+  margin-bottom: 7rem;
+}
+.proyectos-page .entrada-proyectos {
+  margin-bottom: 10rem;
+  cursor: pointer;
+}
+
+.proyectos-page .texto-proyecto h3 {
+  font-size: 2rem;
+  text-align: left;
+}
+.proyectos-page .texto-proyecto h3::after {
+  content: "";
+  display: block;
+  margin: 0.2rem 0;
+  background-color: var(--verde);
+  height: 0.5rem;
+  width: 30rem;
+}
+.proyectos-page .descripcion-proyecto {
+  line-height: 1.5;
+  text-indent: 2rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .proyectos-page .entrada-proyectos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+    margin-bottom: 7rem;
+  }
+  .proyectos-page .imagen-proyecto {
+    align-self: start;
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,99 @@
+.servicios-page .servicios h2 {
+  margin-bottom: 6rem;
+}
+
+.servicios-page .servicio-card {
+  padding: 3rem 2rem;
+  border: 1px solid var(--gris);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.servicio-card:nth-child(odd) {
+  /*odd / even: impares/pares*/
+  background-color: var(--grisClaro);
+}
+.servicio-card:nth-child(even) {
+  background-color: var(--amarillo-claro);
+}
+@media (min-width: 768px) {
+  .servicios-page .contenedor-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .servicio-card:nth-child(1),
+  .servicio-card:nth-child(4),
+  .servicio-card:nth-child(5) {
+    background-color: var(--grisClaro);
+  }
+  .servicio-card:nth-child(2),
+  .servicio-card:nth-child(3),
+  .servicio-card:nth-child(6) {
+    background-color: var(--amarillo-claro);
+  }
+}
+
+.servicios-page .servicio-card .iconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+.servicios-page .servicio-card .icono {
+  margin: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  width: 7rem;
+
+  border-radius: 50%;
+  /*padding: 0.5rem;*/
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.servicios-page .servicio-card img {
+  width: 3rem;
+}
+.servicios-page .servicio-card .text-img {
+  font-weight: bold;
+}
+.servicios-page .servicio-card .nombre-icono {
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.servicio-card:nth-child(odd) .icono {
+  background-color: var(--secundario);
+}
+.servicio-card:nth-child(even) .icono {
+  background-color: var(--amarillo);
+}
+@media (min-width: 768px) {
+  .servicio-card:nth-child(1) .icono,
+  .servicio-card:nth-child(4) .icono,
+  .servicio-card:nth-child(5) .icono {
+    background-color: var(--secundario);
+  }
+  .servicio-card:nth-child(2) .icono,
+  .servicio-card:nth-child(3) .icono,
+  .servicio-card:nth-child(6) .icono {
+    background-color: var(--amarillo);
+  }
+}
+.servicios-page .servicio-card .titulo {
+  color: var(--azul);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.servicios-page .servicio-card .subtitulo {
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+.servicios-page .servicio-card .descripcion {
+  line-height: 2;
+  text-indent: 2rem;
+  /*text-align: center;*/
+}

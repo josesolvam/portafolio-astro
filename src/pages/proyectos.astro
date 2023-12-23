@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Proyectos from "../components/Proyectos.astro";
+---
+
+<Layout title="Jose Ramón | Programador Web" classNamePage="proyectos-page">
+  <main>
+    <Proyectos />
+  </main>
+  <script>
+    import "../js/fetch-proyectos";
+  </script>
+</Layout>

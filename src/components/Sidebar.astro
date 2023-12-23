@@ -1,0 +1,36 @@
+---
+import iconoCerrar from "../assets/img/ti-x.svg";
+export interface Props {
+  classNamePage: string;
+}
+
+const { classNamePage } = Astro.props;
+---
+
+<aside id="sidebar" class="sidebar">
+  <img
+    id="close-menu-icon"
+    class="closebtn"
+    src={iconoCerrar.src}
+    alt="icono cerrar menu"
+  />
+  <a class={classNamePage === "index-page" ? "seleccionado" : null} href="/"
+    >Inicio</a
+  >
+  <a
+    class={classNamePage === "sobre-mi-page" ? "seleccionado" : null}
+    href="/sobre-mi">Sobre Mi</a
+  >
+  <a
+    class={classNamePage === "servicios-page" ? "seleccionado" : null}
+    href="/servicios">Servicios</a
+  >
+  <a
+    class={classNamePage === "proyectos-page" ? "seleccionado" : null}
+    href="/proyectos">Proyectos</a
+  >
+  <a
+    class={classNamePage === "contacto-page" ? "seleccionado" : null}
+    href="/contacto">Contacto</a
+  >
+</aside>

@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("base/normalize.css");
+@import url("base/variables.css");
+@import url("base/globales.css");
+@import url("base/componentes.css");
+@import url("base/utilidades.css");
+@import url("layout/zona-superior.css");
+@import url("layout/sidebar.css");
+@import url("layout/footer.css");
+@import url("pages/index-page.css");
+@import url("pages/contacto.css");
+@import url("pages/servicios.css");
+@import url("pages/proyectos.css");
+@import url("pages/sobre-mi.css");

@@ -1,0 +1,62 @@
+---
+import iconoHtml5 from "../assets/img/ti-brandHtml5.svg";
+import iconoCss3 from "../assets/img/ti-brandCss3.svg";
+import iconoJs from "../assets/img/ti-brandJavascript.svg";
+import iconoDb from "../assets/img/ti-database.svg";
+import iconoCloudComp from "../assets/img/ti-cloudComputing.svg";
+import iconoDocker from "../assets/img/ti-docker.svg";
+import iconoAWS from "../assets/img/ti-aws.svg";
+---
+
+<section id="resumen-servicios" class="contenedor sombra resumen-servicios">
+  <h2>
+    Mis Servicios
+    <span>
+      &nbsp;Sección <a href="/servicios">Servicios</a> para más información
+    </span>
+  </h2>
+  <div class="servicios">
+    <div class="servicio">
+      <h3>Frontend</h3>
+      <div class="iconos">
+        <img src={iconoHtml5.src} alt="icono de html5" loading="lazy" />
+        <img src={iconoCss3.src} alt="icono de css3" loading="lazy" />
+        <img src={iconoJs.src} alt="icono de javascript" loading="lazy" />
+      </div>
+      <p>
+        Creación de sitios y aplicaciones web. Diseño responsive. PWA. Vanilla
+        javiscript y frameworks modernos. Optimización para SEO
+      </p>
+    </div>
+
+    <div class="servicio">
+      <h3>Desarrollador Full Stack</h3>
+      <div class="iconos">
+        <!--              <img src="assets/img/ti-api.svg" alt="icono de api" />-->
+        <p class="text-img">API</p>
+        <img src={iconoDb.src} alt="icono de database" loading="lazy" />
+      </div>
+      <p>
+        Backend. Creación de APIs que se comuniquen con Frontend. Inserción y
+        respaldo segura del información en Bases de Datos. SSR
+      </p>
+    </div>
+
+    <div class="servicio">
+      <h3>Despliegue y testing</h3>
+      <div class="iconos">
+        <img
+          src={iconoCloudComp.src}
+          alt="icono de cloud computing"
+          loading="lazy"
+        />
+        <img src={iconoDocker.src} alt="icono de docker" loading="lazy" />
+        <img src={iconoAWS.src} alt="icono de api" loading="lazy" />
+      </div>
+      <p>
+        Despliegue de aplicaciones web, empleando las últimas tecnologías cloud,
+        docker. Testing
+      </p>
+    </div>
+  </div>
+</section>
