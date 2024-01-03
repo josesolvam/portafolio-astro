@@ -1,0 +1,20 @@
+/** Pagina proyecto **/
+
+.proyecto-page .titulo-proyecto {
+  margin: 5rem auto 7rem;
+  font-weight: 300;
+  font-size: 3.5rem;
+}
+.proyecto-page .texto-proyecto {
+  font-size: 2rem;
+}
+.proyecto-page .fecha-proyecto {
+  margin: 3rem 0;
+}
+.proyecto-page .fecha-proyecto span {
+  color: var(--amarillo-oscuro);
+}
+.proyecto-page .descripcion-proyecto {
+  line-height: 1.8;
+  text-indent: 2rem;
+}

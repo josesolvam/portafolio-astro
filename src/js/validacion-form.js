@@ -1,5 +1,5 @@
 import { datoValido } from "./helpers/validators.js";
-import srcLoading from "../assets/img/ti-rotateClockwise.svg";
+import iconoLoading from "../assets/img/ti-rotateClockwise.svg";
 
 import {
   inputNombre,
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     btnSubmit.disabled = true;
     const imgLoading = document.createElement("IMG");
-    imgLoading.setAttribute("src", srcLoading.src);
+    imgLoading.setAttribute("src", iconoLoading.src);
     imgLoading.setAttribute("alt", "icono de loading");
     imgLoading.classList.add("icono-loading");
     form.appendChild(imgLoading);

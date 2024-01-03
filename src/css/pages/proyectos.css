@@ -1,7 +1,5 @@
 /** Pagina proyectos **/
-.proyectos-page .proyectos {
-  overflow: hidden;
-}
+
 .proyectos-page .proyectos h2 {
   margin-bottom: 7rem;
 }
@@ -22,6 +20,12 @@
   height: 0.5rem;
   width: 30rem;
 }
+.proyectos-page .fecha-proyecto {
+  font-size: 1.3rem;
+}
+.proyectos-page .fecha-proyecto span {
+  color: var(--amarillo-oscuro);
+}
 .proyectos-page .descripcion-proyecto {
   line-height: 1.5;
   text-indent: 2rem;
@@ -38,9 +42,14 @@
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
     margin-bottom: 7rem;
+    min-height: 22rem;
   }
   .proyectos-page .imagen-proyecto {
-    align-self: start;
-    margin-top: 2rem;
+    /*align-self: center;*/
+    height: 100%;
+  }
+  .proyectos-page .imagen-proyecto img {
+    height: 100%;
+    object-fit: cover;
   }
 }

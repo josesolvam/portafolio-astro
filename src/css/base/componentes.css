@@ -1,7 +1,9 @@
 .contenedor {
   /*max-width: var(--desktopXL);*/
   width: min(var(--desktopXL), 98%);
+  min-height: 50vh;
   margin: 2rem auto;
+  overflow: hidden;
 }
 .sombra {
   box-shadow: 0 5px 15px 0 rgba(112, 112, 112, 0.48);
@@ -13,7 +15,7 @@
   background-color: var(--primario);
   color: var(--blanco);
   padding: 1rem 3rem;
-  margin-top: 3rem;
+  /*margin-top: 3rem;*/
   font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;

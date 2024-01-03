@@ -1,10 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Proyecto from "../components/Proyecto.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
 ---
 
 <Layout title="Jose Ramón | Programador Web" classNamePage="proyecto-page">
+  <Breadcrumbs
+    nombrePaginaPadre="Proyectos"
+    hrefPadre="/proyectos"
+    nombrePaginaHija="Proyecto"
+  />
   <main>
+    <!--TODO: falta loading-->
     <Proyecto />
   </main>
   <script>

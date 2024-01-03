@@ -9,6 +9,7 @@
   --secundario: #86d3ff;
   --amarillo: #ffc107;
   --amarillo-claro: #e8dcbe;
+  --amarillo-oscuro: #e08709;
   --gris: #757575;
   --grisOscuro: #333333;
   --grisClaro: #dfe9f3;
@@ -25,8 +26,12 @@
   /*tipografia*/
   --fuente_principal: "Lato", sans-serif;
   --fuente_grandstander: "Grandstander", cursive;
+  /*300 ->	Light*/
+  /*400 ->	Normal (Regular)*/
+  /*700 ->	Bold*/
 
   /*Tamaños de Media Queries*/
+  /*Pantallas pequeñas (_sm, tablets _en vertical) ≥ 576px. Pantallas medianas (md, para tablets en horizontal) ≥ 768px. Pantallas grandes (lg, tamaño escritorio) ≥ 992px. Pantallas extra grandes (xl, escritorio grande) ≥ 1200px.*/
   --telefono: 480px;
   --tablet: 768px;
   --desktop: 992px;

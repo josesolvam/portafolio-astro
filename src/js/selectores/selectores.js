@@ -49,3 +49,4 @@ export const contenedorFormContacto = document.querySelector(
 
 // Selectores elementos donde renderizar fetch
 export const contenedorProyectos = document.querySelector("#proyectos");
+export const contenedorProyecto = document.querySelector("#proyecto");

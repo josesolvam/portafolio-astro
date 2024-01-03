@@ -16,3 +16,12 @@
 .block-scroll {
   overflow: hidden;
 }
+.max-w-md {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.a-disabled {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
