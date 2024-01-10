@@ -20,33 +20,14 @@ export const btnSubmit = document.querySelector(
 );
 
 // Selectores elementos animados
-export const resumenServicios = document.querySelector("#resumen-servicios");
-export const contenedorFormIndex = document.querySelector(
-  "#contenedor-form-index",
-);
-export const sobreMi = document.querySelector("#sobre-mi");
-export const cardServicioFontend = document.querySelector(
-  ".servicio-card.frontend",
-);
-export const cardServicioDesign = document.querySelector(
-  ".servicio-card.design",
-);
-export const cardServicioApiDB = document.querySelector(
-  ".servicio-card.api-db",
-);
-export const cardServicioDespliegue = document.querySelector(
-  ".servicio-card.despliegue",
-);
-export const cardServicioOptimizacion = document.querySelector(
-  ".servicio-card.optimizacion",
-);
-export const cardServicioEconomico = document.querySelector(
-  ".servicio-card.economico",
-);
-export const contenedorFormContacto = document.querySelector(
-  "#contenedor-form-contacto",
-);
+export const allFadeIn = document.querySelectorAll(".fade-in");
 
 // Selectores elementos donde renderizar fetch
 export const contenedorProyectos = document.querySelector("#proyectos");
+export const errorFetchProyectos = document.querySelector(
+  "#error-fetch-proyectos",
+);
 export const contenedorProyecto = document.querySelector("#proyecto");
+export const errorFetchProyecto = document.querySelector(
+  "#error-fetch-proyecto",
+);

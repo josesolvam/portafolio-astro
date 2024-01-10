@@ -1,32 +1,13 @@
-import {
-  resumenServicios,
-  contenedorFormIndex,
-  sobreMi,
-  cardServicioFontend,
-  cardServicioDesign,
-  cardServicioApiDB,
-  cardServicioDespliegue,
-  cardServicioOptimizacion,
-  cardServicioEconomico,
-  contenedorFormContacto,
-} from "../selectores/selectores.js";
-
-let elementosFadeIn = [
-  resumenServicios,
-  contenedorFormIndex,
-  sobreMi,
-  cardServicioFontend,
-  cardServicioDesign,
-  cardServicioApiDB,
-  cardServicioDespliegue,
-  cardServicioOptimizacion,
-  cardServicioEconomico,
-  contenedorFormContacto,
-];
+import { allFadeIn } from "../selectores/selectores.js";
+let elementosFadeIn = [];
+allFadeIn.forEach((elemento) => {
+  elementosFadeIn.push(elemento);
+});
 
 export function animaciones() {
   fadeIn();
 }
+
 function fadeIn() {
   initFadein(elementosFadeIn);
   window.addEventListener("scroll", function () {
@@ -47,12 +28,13 @@ function initFadein(elementos) {
   });
 }
 function fadeinExec(elementos) {
+  // console.log(elementos);
   elementosFadeIn = elementos.map((elemento) => {
     if (
       elemento &&
       elemento.getBoundingClientRect().top < window.innerHeight - 40
     ) {
-      elemento.classList.add("fade-in");
+      elemento.classList.add("apply-fade-in");
       // console.log(`Eliminado del array el elemento: `, elemento.id);
       return null;
     }

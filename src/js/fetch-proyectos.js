@@ -1,17 +1,12 @@
-import { contenedorProyectos } from "./selectores/selectores.js";
-const URL_API = import.meta.env.PUBLIC_URL_API;
+import {
+  contenedorProyectos,
+  errorFetchProyectos,
+} from "./selectores/selectores.js";
 const URL_IMAGENES = import.meta.env.PUBLIC_URL_IMAGENES;
 const URL_CLIENT = import.meta.env.PUBLIC_URL_CLIENT;
-// console.log("URL_API", URL_API);
-// console.log("URL_IMAGENES", URL_IMAGENES);
-// console.log("URL_CLIENT", URL_CLIENT);
-
-export class MyError extends Error {
-  constructor(message) {
-    super(message);
-    this.name = "MyError";
-  }
-}
+import { MyError } from "./api/my-error.js";
+import { fetchProyectos } from "./api/api.js";
+import { mostrarAlertas } from "./funcionalidades/alertas.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   renderProyectos();
@@ -22,45 +17,25 @@ async function renderProyectos() {
     const jsonData = await fetchProyectos();
     mostrarProyectos(jsonData.resultado.proyectos);
   } catch (err) {
-    const divError = document.createElement("P");
-    divError.style.textAlign = "center";
+    let arrayErrors;
     if (err instanceof MyError) {
-      divError.textContent = err.message;
+      arrayErrors = JSON.parse(err.message);
     } else {
-      console.log(err);
-      divError.textContent = "Error en la petición";
+      arrayErrors = ["Error"];
     }
-    contenedorProyectos.appendChild(divError);
+    mostrarAlertas("error", errorFetchProyectos, arrayErrors);
   }
 }
 
-async function fetchProyectos() {
-  try {
-    const url = `${URL_API}/proyectos`;
-    console.log(url);
-    const resultado = await fetch(url);
-    const jsonData = await resultado.json();
-    if (jsonData.errores) {
-      throw new MyError(jsonData.errores.toString());
-    }
-    return jsonData;
-  } catch (err) {
-    throw err;
-  }
-}
 function mostrarProyectos(proyectos) {
+  if (!proyectos.length) {
+    throw new MyError(JSON.stringify(["No hay registros"]));
+  }
   proyectos.forEach((proyecto) => {
-    const {
-      id,
-      slug,
-      titulo,
-      descripcion,
-      imagen,
-      fechaProyecto: fecha,
-    } = proyecto;
+    const { id, titulo, descripcion, imagen, fechaProyecto: fecha } = proyecto;
 
     const entradaProyectos = document.createElement("ARTICLE");
-    entradaProyectos.classList.add("entrada-proyectos");
+    entradaProyectos.classList.add("entrada-proyectos", "fade-in");
 
     const divImgProyecto = document.createElement("DIV");
     divImgProyecto.classList.add("imagen-proyecto");
@@ -98,7 +73,6 @@ function mostrarProyectos(proyectos) {
     // });
     entradaProyectos.onclick = function () {
       location.href = `${URL_CLIENT}/proyecto/#/${id}`;
-      // location.href = "http://localhost:4321/proyecto";
     };
     contenedorProyectos.appendChild(entradaProyectos);
   });

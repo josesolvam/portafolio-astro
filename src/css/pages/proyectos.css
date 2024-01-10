@@ -53,3 +53,7 @@
     object-fit: cover;
   }
 }
+.proyectos-page .errores {
+  text-align: center;
+  margin: 3rem auto;
+}

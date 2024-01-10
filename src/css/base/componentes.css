@@ -76,7 +76,7 @@
   padding: 1rem;
   line-height: 2rem;
 }
-.fade-in {
+.apply-fade-in {
   animation: fadeIn 0.5s ease-out forwards;
   animation-delay: 0.3s;
 }
